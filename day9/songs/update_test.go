@@ -1,14 +1,13 @@
 package songs
 
 import (
-	"encoding/json"
-	"github.com/gin-gonic/gin"
-	"github.com/stretchr/testify/assert"
-	"io"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
+
+	"github.com/gin-gonic/gin"
+	"github.com/stretchr/testify/assert"
 )
 
 func makeAUpdateCall(requestUrl string, reqBody string) *httptest.ResponseRecorder {
